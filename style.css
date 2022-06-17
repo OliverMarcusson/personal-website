@@ -1,9 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
 
 ul {
   outline: 0;
+}
+
+nav {
+  box-shadow: 0px 3px 3px #242424;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #navbar {
@@ -13,7 +32,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 5px black;
 }
 
 .navbarLink {
@@ -82,12 +100,68 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.contentImgContainer {
+  position: relative;
+  height: 400px;
+  width: auto;
+  box-shadow: 0px 3px 3px #242424;
+}
+
+.contentImg {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  text-align: center;
+}
+
+.contentPageTitle {
+  position: absolute;
+  top: 125px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 64px;
+  font-weight: 800;
+  text-shadow: 1px 1px 4px black;
+}
+
 .content p {
   font-size: 18px;
+}
+
+#backToTop {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 50%;
+  box-shadow: 0 0 7px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backToTop a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+
+#backToTop:hover {
+  box-shadow: 0 0 8px black;
 }
 
 #footer {
   height: 50px;
   width: auto;
-  color: #333;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#footer p {
+  color: gray;
+  padding-left: 10px;
 }
