@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+
+ul {
+  outline: 0;
+}
+
+#navbar {
+  margin: 0;
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px black;
+}
+
+.navbarLink {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLink ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.navbarLink li {
+  display: inline;
+  padding: 16px 8px;
+}
+
+.navbarLink a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.navbarLink li:hover {
+  background-color: black;
+}
+
+#mainPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification {
+  background-color: lightcoral;
+  border-left: 4px;
+  border-color: red;
+  border-style: none;
+  border-left-style: solid;
+  border-radius: 10px;
+  margin: 16px 16px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notification h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  margin: 0;
+}
+
+.notification span {
+  color: white;
+  font-size: 25px;
+}
+.notification span:hover {
+  cursor: pointer;
+}
+
+.content {
+  margin: 0px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content p {
+  font-size: 18px;
+}
+
+#footer {
+  height: 50px;
+  width: auto;
+  color: #333;
+}
