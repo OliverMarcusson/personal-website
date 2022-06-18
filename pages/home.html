@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ad07cff1be.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/universalelements.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Hem</title>
+  </head>
+  <body>
+    <nav id="nav"></nav>
+    <div id="page">
+      <div id="pfp">
+        <div id="pfpborder">
+          <img
+            src="/resources/img/irlpfp.png"
+            alt="Profile Picture"
+            height="256px"
+            width="256px"
+            class="irlpfp"
+          />
+          <img
+            src="/resources/img/pfp.png"
+            alt="Profile Picture"
+            height="256px"
+            width="256px"
+            class="pfp"
+          />
+        </div>
+      </div>
+      <div id="name"><h1 class="white arial">Oliver Marcusson</h1></div>
+      <div id="description">
+        <h2 class="white arial fw-normal">Gymnasiestudent,</h2>
+        <h2 id="age" class="white arial fw-normal">
+          <script>
+            document.getElementById("age").innerHTML = " " + age() + " år";
+          </script>
+        </h2>
+      </div>
+      <div id="buttons">
+        <button><a href="/pages/about.html">Om mig</a></button>
+        <button><a href="/pages/contact.html">Kontakt</a></button>
+      </div>
+    </div>
+    <footer id="footer"></footer>
+  </body>
+</html>

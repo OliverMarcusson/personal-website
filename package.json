@@ -1,6 +1,19 @@
 {
+  "name": "myfirstwebsite",
+  "version": "1.0.0",
+  "description": "My First Website",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OliverMarcusson/personal-website.git"
+  },
+  "author": "Oliver Marcusson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OliverMarcusson/personal-website/issues"
+  },
+  "homepage": "https://github.com/OliverMarcusson/personal-website#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.1.1",
-    "bootstrap": "^5.2.0-beta1"
+    "jquery": "^3.6.0"
   }
 }

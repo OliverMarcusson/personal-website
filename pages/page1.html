@@ -4,26 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/ad07cff1be.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/home.js"></script>
-    <script src="/js/universalelements.js"></script>
-    <link rel="stylesheet" href="/style.css" />
-    <title>Om mig</title>
+    <title>Page 1</title>
   </head>
+
   <body>
-    <nav></nav>
+    <nav id="nav"></nav>
+    <script>
+      $("#nav").load("/resources/html/navbar.html");
+    </script>
+
     <div id="mainPage">
       <div class="contentImgContainer">
         <img
           class="contentImg"
-          src="https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          src="https://images.pexels.com/photos/1910225/pexels-photo-1910225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           alt="Content Picture"
         />
-        <h1 class="contentPageTitle">Om Mig</h1>
+        <h1 class="contentPageTitle">Page 1</h1>
       </div>
       <div class="content">
         <h2>Tjenare! 👋</h2>
@@ -141,6 +145,11 @@
         <a class="backToTop" href="#">&#129129;</a>
       </div>
     </div>
-    <footer></footer>
+
+    <footer>
+      <div id="footer">
+        <p>&#169; Oliver Marcusson, 2022</p>
+      </div>
+    </footer>
   </body>
 </html>

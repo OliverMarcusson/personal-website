@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+#description h2 {
+  display: inline;
+}
+
+#pfp {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin: 50px 0px 20px 0px;
+}
+
+#pfpborder {
+  height: 256px;
+  width: 256px;
+  border: 4px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+#pfpborder img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pfp {
+  display: none;
+}
+
+#name {
+  display: flex;
+  justify-content: center;
+}
+
+#description {
+  display: flex;
+  justify-content: center;
+}
+
+#name h1 {
+  margin: 0;
+}
+
+#description h2 {
+  margin: 0px 2px 10px 2px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#buttons button {
+  margin: 0px 10px;
+  background-color: powderblue;
+  border: 2px solid black;
+
+  border-radius: 5px;
+}
+
+#buttons a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: azure;
+  text-decoration: none;
+}
+
+#page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  background: rgb(133, 61, 215);
+  background: linear-gradient(
+    135deg,
+    rgba(133, 61, 215, 1) 0%,
+    rgba(179, 79, 236, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
