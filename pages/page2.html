@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/resources/css/projectObject.css" />
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ad07cff1be.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/projects.js"></script>
+
+    <!-- title -->
+    <title>Page 1</title>
+  </head>
+
+  <body>
+    <nav id="nav"></nav>
+    <script>
+      $("#nav").load("/resources/html/navbar.html");
+    </script>
+    <div id="mainPage">
+      <div class="contentImgContainer">
+        <img
+          class="contentImg"
+          src="https://images.pexels.com/photos/3274903/pexels-photo-3274903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Content Picture"
+        />
+        <h1 class="contentPageTitle">Mina Projekt</h1>
+      </div>
+      <div class="content">
+        <div id="projectList">
+          <div
+            class="projectContainer"
+            onclick="anchor('https://github.com/OliverMarcusson/Blackjack')"
+          >
+            <div
+              class="pc-img"
+              style="
+                background-image: url(https://images.pexels.com/photos/1871508/pexels-photo-1871508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+              "
+            ></div>
+            <div class="pc-desc">
+              <span class="title">Blackjack</span>
+              <span class="desc" style="font-weight: 300"
+                >Blackjack-inspirerat spel skrivet i Python.</span
+              >
+            </div>
+          </div>
+
+          <div class="projectContainer" onclick="anchor('/pages/page1.html')">
+            <div
+              class="pc-img"
+              style="
+                background-image: url(https://images.pexels.com/photos/3283186/pexels-photo-3283186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+              "
+            ></div>
+            <div class="pc-desc">
+              <span>Exotic Waterfall (Placeholder)</span>
+              <span style="font-weight: 300">Look at this cool waterfall!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="backToTop" class="backToTop">
+        <a class="backToTop" href="#">&#129129;</a>
+      </div>
+    </div>
+
+    <footer>
+      <div style="position: relative; bottom: 0">
+        <script>
+          $("footer").load("/resources/html/footer.html");
+        </script>
+      </div>
+    </footer>
+  </body>
+</html>

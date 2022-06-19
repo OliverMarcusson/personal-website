@@ -4,6 +4,9 @@ html {
 
 body {
   margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 ul {
@@ -110,7 +113,7 @@ h2 {
 
 .contentImgContainer {
   position: relative;
-  height: 400px;
+  height: 300px;
   width: auto;
   box-shadow: 0px 3px 3px #242424;
 }
@@ -124,7 +127,7 @@ h2 {
 
 .contentPageTitle {
   position: absolute;
-  top: 125px;
+  top: 50px;
   width: 100%;
   text-align: center;
   color: white;
@@ -160,16 +163,17 @@ h2 {
   box-shadow: 0 0 8px black;
 }
 
-#footer {
+footer {
   height: 50px;
   width: auto;
   background-color: #333;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-top: auto;
 }
 
-#footer p {
+footer p {
   color: gray;
   padding-left: 10px;
 }

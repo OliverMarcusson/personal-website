@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+}
+
+#projectList {
+  display: flex;
+  flex-direction: row;
+  margin: 13px;
+}
+
+.projectContainer {
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  border: 2px none white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 6px gray;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 0.2s;
+}
+
+.projectContainer:hover {
+  transform: scale(1.075);
+}
+
+.pc-img {
+  background-color: whitesmoke;
+  width: 300px;
+  height: 125px;
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.pc-desc {
+  background-color: white;
+  width: 300px;
+  height: 75px;
+  border-radius: 10px 10px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 0px -2px 8px black; */
+}
+
+.pc-desc span {
+  padding: 5px 10px 0px 15px;
+  font-family: "Roboto", sans-serif;
+}
